@@ -1,4 +1,6 @@
 {
+  "name": "njayman",
+  "description": "njayman portfolio",
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
@@ -8,5 +10,6 @@
   "devDependencies": {
     "typescript": "^4.3.2",
     "vite": "^2.4.0"
-  }
+  },
+  "license": "MIT"
 }
