@@ -1,0 +1,8 @@
+version: "1"
+services:
+  njayman:
+    container_name: njayman-portfolio
+    networks:
+      - local_net
+    ports:
+      - "8080:8080"
