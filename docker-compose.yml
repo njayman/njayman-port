@@ -1,8 +1,13 @@
-version: "1"
+version: "3.3"
+
 services:
-  njayman:
-    container_name: njayman-portfolio
-    networks:
-      - local_net
+  client:
+    image: njayman/njayman
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    volumes:
+      - .:/app
     ports:
       - "8080:8080"
+    command: npm run serve

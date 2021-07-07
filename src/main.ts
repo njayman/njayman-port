@@ -15,12 +15,11 @@ const changeChangableSection = (step: string) => {
       idx = information.length - 1;
     }
   }
-  console.log(idx);
   changableSection.innerHTML = `<h1>${information[idx].title}</h1>`;
 };
 
 changeChangableSection("");
 
-// setInterval(() => {
-//   changeChangableSection("forward");
-// }, 2000);
+setInterval(() => {
+  changeChangableSection("forward");
+}, 2000);
